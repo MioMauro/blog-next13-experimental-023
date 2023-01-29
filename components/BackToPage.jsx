@@ -1,10 +1,12 @@
 import React from 'react'
+import { FcDownLeft } from 'react-icons/fc';
 
 const BackToPage = () => {
 return (
-    <button className='p-2 text-lg border rounded-lg'>
-        🔙 to 🏠
-    </button>
+    <div className='flex'>
+        <FcDownLeft/><span> Back to Home</span>
+    </div>
+    
 )
 }
 

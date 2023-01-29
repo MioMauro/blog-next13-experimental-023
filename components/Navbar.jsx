@@ -7,7 +7,7 @@ import { FcMenu } from 'react-icons/fc';
 
 const Navbar = () => {
 return (
-    <div className='w-full bg-slate-500 flex justify-around'>
+    <div className='w-full flex justify-around'>
     <div className='flex gap-2 p-2'>
         <h2 className='logo'>Next-Experimental</h2>
     </div>
