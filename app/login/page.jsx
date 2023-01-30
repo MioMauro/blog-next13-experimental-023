@@ -1,16 +1,17 @@
-import ContactForm from '@/components/ContactForm'
-import BackToPage from '@/components/BackToPage'
-import Link from 'next/link'
+'use client'
 
-export default function LoginPage(){
-  return (      
-        <div className='h-screen w-full flex items-center justify-center'>
-          <div>
-          <Link href="/">
-            <BackToPage />
-          </Link>            
-            <ContactForm />
-          </div>
-        </div>    
-  )
-  }
+import React from 'react'
+import Link from 'next/link'
+import BackToPage from '@/components/BackToPage' 
+
+const loginPage = () => {
+return (
+    <div>
+        <Link href="/">
+            <BackToPage/>
+        </Link>
+    </div>
+)
+}
+
+export default loginPage

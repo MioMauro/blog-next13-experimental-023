@@ -3,7 +3,7 @@
 import { useFormik } from "formik";
 import * as Yup from 'yup'
 
-export default function ContactForm() {
+export default function SendMailForm() {
 
 //Formik logic
 const formik = useFormik({
@@ -96,7 +96,7 @@ const formik = useFormik({
               </div>
               </div>
                   <div>
-                    <button type='submit' className='bg-teal-500 text-sm text-white py-3 mt-6 rounded-lg w-full'>Sign In</button>
+                    <button type='submit' className='bg-teal-500 text-sm text-white py-3 mt-6 rounded-lg w-full'>Send</button>
                   </div>
               </div>
             </div>            

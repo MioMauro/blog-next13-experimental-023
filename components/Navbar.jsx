@@ -7,22 +7,24 @@ import { FcMenu } from 'react-icons/fc';
 
 const Navbar = () => {
 return (
-    <div className='w-full flex justify-around'>
+    <div className='w-full flex justify-around border-b'>
     <div className='flex gap-2 p-2'>
-        <h2 className='logo'>Next-Experimental</h2>
+        <Link href='/'>
+            <h2 className='font-bold'>Next-Experimental</h2>
+        </Link>
     </div>
 
     <div>
-    <ul className='flex gap-2 p-2'>
-        <Link href="/blog" >BLOG</Link>  
-        <Link href="/about" >ABOUT</Link>
-        <Link href="/career" >CAREER</Link>
+    <ul className='flex gap-6 p-2'>
+        <Link href="/blog" className='hover:font-bold'>BLOG</Link>  
+        <Link href="/about" className='hover:font-bold'>ABOUT</Link>
+        <Link href="/contact" className='hover:font-bold'>CONTACT</Link>
     </ul>
     </div>
 
     <div className='flex gap-2 p-2'>
     <Link href="/login" >
-    Log in
+    Log In
     </Link> 
 
     <Link href="/signup" >

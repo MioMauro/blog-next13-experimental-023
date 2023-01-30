@@ -19,10 +19,13 @@ const withMT = require("@material-tailwind/react/utils/withMT");
 module.exports = withMT({
 ---
 replace with:
+
  npm install formik --save
+
  npm i yup
 
 import { useFormik } from 'formik';
+
 import * as Yup from 'yup'
 
 ---
