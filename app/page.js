@@ -3,6 +3,7 @@
 import React from 'react'
 import { Inter } from '@next/font/google'
 import { Red_Hat_Text } from '@next/font/google'
+import Card from '@/components/Card'
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -16,7 +17,7 @@ const redHat = Red_Hat_Text({
 
 export default function Home() {
   return (
-    <h1>here homepage</h1> 
+    <Card/>
     ) 
 }
 

@@ -29,3 +29,16 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup'
 
 ---
+npm install flowbite flowbite-react --save
+
+Require Flowbite as a plugin inside the tailwind.config.js
+ file:
+
+ plugins: [
+    require("flowbite/plugin")
+  ],
+
+    "./node_modules/flowbite-react/**/*.js",
+
+With this plugin we also can omiss className and use only class=""
+---

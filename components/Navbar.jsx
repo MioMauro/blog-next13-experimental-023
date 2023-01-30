@@ -22,7 +22,7 @@ return (
     </ul>
     </div>
 
-    <div className='flex gap-2 p-2'>
+    <div className='flex gap-6 p-2'>
     <Link href="/login" >
     Log In
     </Link> 
@@ -36,7 +36,7 @@ return (
     </Link>
     </div>
 
-    <div className='flex gap-2 p-2'>
+    <div className='flex gap-4 p-2'>
         <FcSearch className='cursor-pointer'/>
         <FcMenu className='cursor-pointer'/>
     </div>
