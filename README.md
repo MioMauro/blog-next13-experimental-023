@@ -2,7 +2,7 @@
 
 You-Tube https://www.youtube.com/watch?v=TkFIm2d9tec
 ---
-time: 28:00
+time: :00
 ---
 npx create-next-app@latest --experimental-app
 ---
