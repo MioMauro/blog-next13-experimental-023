@@ -6,9 +6,7 @@ https://www.youtube.com/watch?v=1Sqfonk-6Sk
 
 https://www.youtube.com/watch?v=0GgwX0nfAb0
 ---
----
 npm i react-axios
----
 ---
 npx create-next-app@latest --experimental-app
 ---
@@ -53,9 +51,14 @@ import { use } from "react"
 ---
 thanks to: https://rickandmortyapi.com/
 ---
----
 npm i swr
 
 SWR is a React Hooks library for data fetching.
 https://www.npmjs.com/package/swr
+---
+npm i framer-motion
+import { motion } from "framer-motion"
+
+export const MyComponent = ({ isVisible }) => (
+    <motion.div animate={{ opacity: isVisible ? 1 : 0 }} />)
 ---

@@ -4,6 +4,7 @@ import React from 'react'
 import { Inter } from '@next/font/google'
 import { Red_Hat_Text } from '@next/font/google'
 import Card from '@/components/Card'
+import Navbar from '@/components/Navbar'
 
 
 const inter = Inter({ 
@@ -17,8 +18,11 @@ const redHat = Red_Hat_Text({
 
 
 export default function Home() {
-  return (    
-    <Card/>
+  return ( 
+    <div>
+    <div><Navbar/></div>
+    <div><Card/></div>
+    </div> 
     ) 
 }
 
