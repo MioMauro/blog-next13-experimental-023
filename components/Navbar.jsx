@@ -1,48 +1,67 @@
 'use client'
 
 import Link from 'next/link';
-import React from 'react'
 import { FcSearch } from 'react-icons/fc';
 import { FcMenu } from 'react-icons/fc';
 
-const Navbar = () => {
-return (
-    <div className='w-full flex justify-around border-b'>
-    <div className='flex gap-2 p-2'>
-        <Link href='/'>
-            <h2 className='font-bold'>Next-Experimental</h2>
-        </Link>
-    </div>
+const routes = [
+    { name: "About", path: "/about"},
+    { name: "Contact", path: "/contact"},
+    { name: "Log In", path: "/login"},
+    { name: "Sig Up", path: "/signup"}, 
+]
 
-    <div>
-    <ul className='flex gap-6 p-2'>
-        <Link href="/blog" className='hover:font-bold'>BLOG</Link>  
-        <Link href="/about" className='hover:font-bold'>ABOUT</Link>
-        <Link href="/contact" className='hover:font-bold'>CONTACT</Link>
-    </ul>
-    </div>
+const mapRoutes = [
+    { name: "Map-method-1", path: "/mapprimo"}, 
+    { name: "Map-method-2", path: "/mapsecondo"},
+    { name: "Map-method-3", path: "/mapterzo"},
+    { name: "Map-method-Axios", path: "/axios"},
+]
 
-    <div className='flex gap-6 p-2'>
-    <Link href="/login" >
-    Log In
+const mapRoutess = [
+    { name: "Framer Motion", path: "/framermotion"}, 
+
+]
+
+export default function Navbar() {
+    return(
+    <header>        
+        <div className='w-full flex justify-around border-b'> 
+    <Link href="/">      
+        <h1 className='font-bold'>Next js 13 - Experimental</h1>        
     </Link> 
+        </div>
 
-    <Link href="/signup" >
-    <button>Sign Up</button>
-    </Link>
+        <div className="flex p-2 border-b gap-6 justify-center">
+            {routes.map(r =>
+            <Link className="hover:font-bold" key={r.index} href={r.path}>
+                {r.name}
+            </Link>
+            )}
+                <div className='flex gap-4 p-2'>
+                    <FcSearch className='cursor-pointer'/>
+                    <FcMenu className='cursor-pointer'/>
+                </div>
+        </div>
 
-    <Link href="/create" >
-    <button>Create</button> 
-    </Link>
-    </div>
-
-    <div className='flex gap-4 p-2'>
-        <FcSearch className='cursor-pointer'/>
-        <FcMenu className='cursor-pointer'/>
-    </div>
-
-    </div>   
-)
+        <nav>
+            <div className="flex p-2 border-b gap-6 justify-center">
+                {mapRoutes.map(r =>
+                <Link className="hover:font-bold" key={r.index} href={r.path}>
+                {r.name}
+                </Link>
+                )}            
+            </div>
+        </nav>
+        
+        <div className="flex p-2 border-b gap-6 justify-center">
+            {mapRoutess.map(r =>
+            <Link className="hover:font-bold" key={r.index} href={r.path}>
+            {r.name}
+            </Link>
+            )}            
+        </div>
+        
+    </header>        
+    )
 }
-
-export default Navbar

@@ -5,6 +5,7 @@ import { Inter } from '@next/font/google'
 import { Red_Hat_Text } from '@next/font/google'
 import Card from '@/components/Card'
 
+
 const inter = Inter({ 
   subsets: ['latin'],
   weight: ['700', '600'],
@@ -16,7 +17,7 @@ const redHat = Red_Hat_Text({
 
 
 export default function Home() {
-  return (
+  return (    
     <Card/>
     ) 
 }

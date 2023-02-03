@@ -1,0 +1,20 @@
+async function getCharacters() {
+	return await (await fetch("https://rickandmortyapi.com/api/character")).json();
+}
+
+// getStaticPaths in Next13
+export async function generateStaticParams() {
+	const characters = await getCharacters();
+
+	return characters?.results.map(c => ({
+		slug: c?.name.replace(/\s+/g, "-").toLowerCase()
+	}))
+}
+
+export default function Staticpage({ params }) {
+	return (
+		<>
+			<h1>Character name: {params.slug}</h1>
+		</>
+	)
+}
