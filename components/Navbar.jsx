@@ -5,6 +5,7 @@ import { FcSearch } from 'react-icons/fc';
 import { FcMenu } from 'react-icons/fc';
 
 const routes = [
+    { name: "Home", path: "/"},
     { name: "About", path: "/about"},
     { name: "Contact", path: "/contact"},
     { name: "Log In", path: "/login"},
@@ -20,12 +21,11 @@ const mapRoutes = [
 
 const mapRoutess = [
     { name: "Framer Motion", path: "/framermotion"}, 
-
 ]
 
 export default function Navbar() {
     return(
-    <header>        
+    <header>
         <div className='w-full flex justify-around border-b'> 
     <Link href="/">      
         <h1 className='font-bold'>Next js 13 - Experimental</h1>        
@@ -61,7 +61,6 @@ export default function Navbar() {
             </Link>
             )}            
         </div>
-        
     </header>        
     )
 }

@@ -1,15 +1,18 @@
 'use client'
 
-import React from 'react'
-import { FcDownLeft } from 'react-icons/fc';
+import { FaReact } from 'react-icons/fc';
+import Link from 'next/link';
 
-const BackToPage = () => {
+export default function BackToPage(){
 return (
-    <div className='flex'>
-        <FcDownLeft/><span> Back to Home</span>
-    </div>
-    
+    <div className='w-full flex justify-around border-b bg-zinc-500'> 
+        <Link href="/">      
+            <h1 className='font-bold'>Next js 13 - Experimental</h1>        
+        </Link> 
+            <div className='flex'>
+                <FaReact/>
+            </div>
+    </div>    
 )
 }
 
-export default BackToPage
