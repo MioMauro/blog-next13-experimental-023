@@ -20,19 +20,20 @@ const mapRoutes = [
 ]
 
 const mapRoutess = [
-    { name: "Framer Motion", path: "/framermotion"}, 
+    { name: "Framer Motion", path: "/framermotion"},
+    { name: "Framer Galaxy", path: "/framergalaxy"}, 
 ]
 
 export default function Navbar() {
     return(
     <header>
-        <div className='w-full flex justify-around border-b'> 
+        <div className='w-full flex justify-around border-b p-4'> 
     <Link href="/">      
         <h1 className='font-bold'>Next js 13 - Experimental</h1>        
     </Link> 
         </div>
 
-        <div className="flex p-2 border-b gap-6 justify-center">
+        <div className="flex p-2 border-b gap-6 justify-around">
             {routes.map(r =>
             <Link className="hover:font-bold" key={r.index} href={r.path}>
                 {r.name}

@@ -84,6 +84,7 @@ https://www.npmjs.com/package/swr
 
 ---
 npm i framer-motion
+
 import { motion } from "framer-motion"
 
 export const MyComponent = ({ isVisible }) => (
