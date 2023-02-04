@@ -2,16 +2,15 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { motion, AnimatePresence } from "framer-motion"
+import { motion } from "framer-motion"
 import tailwindlPic from '@/public/tailwind.png'
 import nebulosa from "@/public/nebulosa.png"
 
+export default function FramerDouble(){
+  return(
+<div className="">
 
-export default function FramerGalaxy() {
-
-  return (
-    <div className="">
-      <div className='w-full flex justify-around bg-zinc-500'> 
+<div className='w-full flex justify-around bg-zinc-500'> 
       <div className="flex">
       <Image className="m-1 mr-2"
               src={tailwindlPic}
@@ -34,46 +33,50 @@ export default function FramerGalaxy() {
               </Image> 
       </div>      
       </div>
-
-      <AnimatePresence>
-<motion.div
+      
+    <motion.div
       initial={{ x: 300, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         exit={{ x: -300, opacity: 0 }}
     >
-      <div className="mt-10 flex flex-row flex-wrap gap-4 justify-center">
+    <div className=" flex justify-center gap-4 mt-8">
       <div>
       <Image className="rounded-lg"
-      src={nebulosa} alt="placeholder" priority/>      
+      src={nebulosa} alt="placeholder" priority/>
       </div>
 
-      <div className="flex">
+      <div>
       <Image className="rounded-lg"
       src={nebulosa} alt="placeholder" priority/>
       </div>
 
-      <div className="flex">
-      <Image className="rounded-lg"
-      src={nebulosa} alt="placeholder" priority/>
-      </div>
-
-      <div className="flex">
-      <Image className="rounded-lg"
-      src={nebulosa} alt="placeholder" priority/>
-      </div>
-
-      <div className="flex">
-      <Image className="rounded-lg"
-      src={nebulosa} alt="placeholder" priority/>
-      </div>
-
-      <div className="flex">
+      <div>
       <Image className="rounded-lg"
       src={nebulosa} alt="placeholder" priority/>
       </div>
       </div>
-      </motion.div>
-      </AnimatePresence>    
-    </div>
+  </motion.div>
+    
+  <motion.div
+      initial={{ x: -300, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        exit={{ x: 300, opacity: 0 }}
+    >
+    <div className=" flex justify-center gap-4 mt-8">
+      <div>
+      <Image className="rounded-lg"
+      src={nebulosa} alt="placeholder" priority/>
+      </div>
+      <div>
+      <Image className="rounded-lg"
+      src={nebulosa} alt="placeholder" priority/>
+      </div>
+      <div>
+      <Image className="rounded-lg"
+      src={nebulosa} alt="placeholder" priority/>
+      </div>
+      </div>
+  </motion.div>
+</div>
   )
 }

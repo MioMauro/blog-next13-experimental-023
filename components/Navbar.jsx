@@ -21,7 +21,8 @@ const mapRoutes = [
 
 const mapRoutess = [
     { name: "Framer Motion", path: "/framermotion"},
-    { name: "Framer Galaxy", path: "/framergalaxy"}, 
+    { name: "Framer Galaxy", path: "/framergalaxy"},
+    { name: "Framer Double", path: "/framerdouble"}, 
 ]
 
 export default function Navbar() {
