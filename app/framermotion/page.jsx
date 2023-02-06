@@ -7,7 +7,6 @@ import nextPic from '@/public/next.svg'
 import vercelPic from '@/public/vercel.svg'
 import tailwindlPic from '@/public/tailwind.png'
 
-
 export default function FramerMotion() {
   return (      
     <div> 
@@ -33,15 +32,15 @@ export default function FramerMotion() {
         >    
         </Image> 
       </div>
-      </div>  
+      </div> 
+      
     <AnimatePresence>
     <motion.div
       initial={{ opacity: 0, y: 25}}
       animate={{ opacity: 1, y: 0}}      
       exit={{ opacity: 0, y: 15}}
       transition={{ delay: 0.45}}
-    > 
-    
+    >     
     <div className="flex flex-col m-auto mt-10 justify-center items-center">
       <h2 className="p-6">Amazing Framer Motion! (AnimatePresence)</h2>
       <Link href="https://beta.nextjs.org/docs/getting-started" target="_blank">
@@ -54,15 +53,15 @@ export default function FramerMotion() {
         </Image>  
       </Link>  
     </div>
-<div>
-<Image className="m-auto mt-20"
+    <div>
+      <Image className="m-auto mt-20"
         src={vercelPic}
         alt="Next 13"
         width={600}
         height={600}
         >    
-        </Image>  
-</div>
+      </Image>  
+    </div>
   </motion.div>
   </AnimatePresence>
 </div>
