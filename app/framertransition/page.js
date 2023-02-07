@@ -6,21 +6,21 @@ import BackToPage from "@/components/BackToPage";
 
 export default function FramerPageTransition(){
   return(
-    <>
+    <div className="">
+    <BackToPage/>
     <motion.div
 initial={{opacity:0}}
 animate={{opacity:1}}
 transition={{duration:0.75, ease:"easeOut"}}
-className="text-blue-700  bg-slate-500 "
->
-    <BackToPage/>
-    <div className="text-2xl font-medium">
-      <ul className="flex gap-12">        
-        <Link href={"/framertransition/framereffect"}>
-        <li>Click to see Framer Effect</li></Link>
+>    
+    <div className="mt-8 text-center w-full text-2xl font-medium ">
+      <ul>        
+        <Link href={"/framertransition/framereffect"} className="">
+          <li className="italic text-center">Click to see Framer Effect</li>
+        </Link>
       </ul>      
-    </div>
+    </div>    
     </motion.div>
-    </>
+  </div>
   )
 }
