@@ -1,11 +1,11 @@
 import React from 'react'
 import { Inter } from '@next/font/google'
 import { Red_Hat_Text } from '@next/font/google'
-//import Card from '@/components/Card'
 import Navbar from '@/components/Navbar'
 import BlobBtn from '@/components/blobbtn/BlobBtn'
 import LayerBtn from '@/components/layerbtn/LayerBtn'
 import ButtonHover from '@/components/buttonhover/ButtonHover'
+import IconHover from '@/components/iconhover/IconHover'
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -20,11 +20,11 @@ const redHat = Red_Hat_Text({
 export default function Home() {
   return ( 
     <div>
-    <div><Navbar/></div>
-    {/* <div><Card/></div>*/}
-    <div><BlobBtn/></div>
-    <div><LayerBtn/></div>
-    <div><ButtonHover/></div>
+    <Navbar/>    
+    <BlobBtn/>
+    <LayerBtn/>
+    <ButtonHover/>
+    <IconHover/>
     </div> 
     ) 
 }
