@@ -90,3 +90,8 @@ npm i framer-motion
 import { motion } from "framer-motion"
 
 ---
+Animation examples:
+
+https://www.youtube.com/@Frankslaboratory/videos
+---
+

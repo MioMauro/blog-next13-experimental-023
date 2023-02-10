@@ -3,10 +3,10 @@
 import React from 'react'
 import { Inter } from '@next/font/google'
 import { Red_Hat_Text } from '@next/font/google'
-import Card from '@/components/Card'
+//import Card from '@/components/Card'
 import Navbar from '@/components/Navbar'
-import BlobBtn from '@/components/BlobBtn'
-
+import BlobBtn from '@/components/blobbtn/BlobBtn'
+import LayerBtn from '@/components/layerbtn/LayerBtn'
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -24,6 +24,7 @@ export default function Home() {
     <div><Navbar/></div>
     {/* <div><Card/></div>*/}
     <div><BlobBtn/></div>
+    <div><LayerBtn/></div>
     </div> 
     ) 
 }

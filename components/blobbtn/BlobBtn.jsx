@@ -1,11 +1,12 @@
+import './style.css'
 import { FaApple } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 
 export default function BlobBtn(){
   return(
-    <section className="border-y-2 mt-10 flex flex-col text-center">
+    <section className="pb-4 border-y-2 flex flex-col text-center">
       <h2 className=" p-4 italic font-bold text-lg"> Liquid effect on button</h2>
-      <div className="button relative">
+      <div className="button relative cursor-pointer">
         <i className="ibutton absolute flex">
           <FaApple/>
         </i>
@@ -14,7 +15,7 @@ export default function BlobBtn(){
             <span></span>
         </div>
       </div>
-      <div className="button relative">
+      <div className="button relative cursor-pointer">
         <i className="ibutton absolute flex">
           <FaFacebookF/>
         </i>
@@ -23,7 +24,7 @@ export default function BlobBtn(){
           <span></span>
         </div>
       </div>
-      <svg>
+      <svg className='absolute'>
         <defs>
         <filter id='hey'>
           <feGaussianBlur in='SourceGraphic'
