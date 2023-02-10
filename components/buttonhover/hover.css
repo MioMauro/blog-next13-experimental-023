@@ -1,0 +1,56 @@
+.effect{
+  position: relative;
+  width: 160px;
+  height: 60px;
+  border: 1px solid black;
+}
+
+.effect p{
+  line-height: 60px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  position: relative;
+  transition: .8s;
+  z-index: 10;
+}
+
+.effect span {
+  position: relative;
+  color: transparent;  
+}
+
+.effect span::before{
+  position: absolute;
+  content: 'H';
+  height: 60px;
+  color: black;
+  transition: .2s ease-out;  
+}
+
+.effect::after{
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 160px;
+  height: 60px;
+  background-color: rgba(1, 1, 1, 0);
+  transition: .8s;
+  z-index: 1;
+}
+
+.effect:hover::after{
+  background-color: rgba(1, 1, 1, 1);
+  transform: rotate(10deg);
+}
+
+.effect:hover p{
+  color: aliceblue;  
+}
+
+.effect:hover span::before{
+  color: aliceblue; 
+  transform:translate(-45%, -10%) rotate(360deg);
+  font-size: 60px;
+}

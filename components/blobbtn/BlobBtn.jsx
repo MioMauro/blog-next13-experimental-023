@@ -1,4 +1,7 @@
-import './style.css'
+'use client'
+
+import './blob.css'
+
 import { FaApple } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 

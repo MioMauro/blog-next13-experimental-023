@@ -1,8 +1,7 @@
 "use client"
 
-import './style.css'
+import './layer.css'
 import { FaBuffer } from "react-icons/fa";
-
 
 export default function BlobBtn(){
   return(
@@ -12,8 +11,7 @@ export default function BlobBtn(){
     <span></span>
     <span></span>
     <span><i><FaBuffer/></i></span>
-    <span></span>
-      
+    <span></span>      
     </div>
     </section>
   )

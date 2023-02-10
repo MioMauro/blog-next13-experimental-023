@@ -1,5 +1,3 @@
-'use client'
-
 import Link from 'next/link';
 import { FcSearch } from 'react-icons/fc';
 import { FcMenu } from 'react-icons/fc';
