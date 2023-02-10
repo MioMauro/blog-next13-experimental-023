@@ -6,7 +6,7 @@ import BlobBtn from '@/components/blobbtn/BlobBtn'
 import LayerBtn from '@/components/layerbtn/LayerBtn'
 import ButtonHover from '@/components/buttonhover/ButtonHover'
 import IconHover from '@/components/iconhover/IconHover'
-
+import BtnBubbles from '@/components/btnbubbles/BtnBubbles'
 const inter = Inter({ 
   subsets: ['latin'],
   weight: ['700', '600'],
@@ -25,6 +25,7 @@ export default function Home() {
     <LayerBtn/>
     <ButtonHover/>
     <IconHover/>
+    <BtnBubbles/>
     </div> 
     ) 
 }
