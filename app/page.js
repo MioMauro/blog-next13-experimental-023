@@ -5,6 +5,7 @@ import { Inter } from '@next/font/google'
 import { Red_Hat_Text } from '@next/font/google'
 import Card from '@/components/Card'
 import Navbar from '@/components/Navbar'
+import BlobBtn from '@/components/BlobBtn'
 
 
 const inter = Inter({ 
@@ -22,6 +23,7 @@ export default function Home() {
     <div>
     <div><Navbar/></div>
     <div><Card/></div>
+    <div><BlobBtn/></div>
     </div> 
     ) 
 }
