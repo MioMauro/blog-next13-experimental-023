@@ -22,7 +22,7 @@ export default function Home() {
   return ( 
     <div>
     <div><Navbar/></div>
-    <div><Card/></div>
+    {/* <div><Card/></div>*/}
     <div><BlobBtn/></div>
     </div> 
     ) 

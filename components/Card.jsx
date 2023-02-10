@@ -16,6 +16,7 @@ return (
         alt="Mountains static image"
         placeholder="blur"
         className="rounded"
+        
     />
     </a>
     <div class="p-5">
