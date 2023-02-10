@@ -1,4 +1,4 @@
-![screenShot]('MioMauro/next13-experimental-023/public/screen1.png')
+![screenShot]('../screen1.png')
 
 to be implemented with other features
 
