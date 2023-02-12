@@ -8,8 +8,9 @@ import EditButton from './EditButton';
 
 const Card = (props) => {
 return (
-    <div className='mt-6 ml-6'>        
-<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <>
+<div className='mt-6 ml-6'>        
+    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <a href="#">
     <Image    
         src={food1}
@@ -29,8 +30,9 @@ return (
             <EditButton/>
         </div>
     </div>
-</div>
     </div>
+</div>
+    </>
 )
 }
 

@@ -7,6 +7,9 @@ import LayerBtn from '@/components/layerbtn/LayerBtn'
 import ButtonHover from '@/components/buttonhover/ButtonHover'
 import IconHover from '@/components/iconhover/IconHover'
 import BtnBubbles from '@/components/btnbubbles/BtnBubbles'
+import LiquidBg from '@/components/liquidbg/LiquidBg'
+
+
 const inter = Inter({ 
   subsets: ['latin'],
   weight: ['700', '600'],
@@ -16,17 +19,17 @@ const redHat = Red_Hat_Text({
   weight: ['700', '600'],
 })
 
-
 export default function Home() {
   return ( 
-    <div>
+    <>
     <Navbar/>    
     <BlobBtn/>
     <LayerBtn/>
     <ButtonHover/>
     <IconHover/>
     <BtnBubbles/>
-    </div> 
+    <LiquidBg/>
+    </> 
     ) 
 }
 

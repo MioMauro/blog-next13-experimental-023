@@ -34,7 +34,7 @@ const formik = useFormik({
 });
 
   return (      
-        
+        <>
           <form onSubmit={formik.handleSubmit} className='bg-white flex rounded-lg w-full'>
             <div className='flex text-gray-700 p-20 w-full'>              
               <div className='mt-6 w-full'>
@@ -101,6 +101,6 @@ const formik = useFormik({
               </div>
             </div>            
           </form>
-            
+        </>       
   )
 }

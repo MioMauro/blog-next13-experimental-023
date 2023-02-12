@@ -26,13 +26,13 @@ const mapRoutess = [
 
 export default function Navbar() {
     return(
-    <header>
+        <>
+    <nav>
         <div className='w-full flex justify-around border-b p-4'> 
     <Link href="/">      
         <h1 className='font-bold'>Next js 13 - Experimental</h1>        
     </Link> 
         </div>
-
         <div className="flex p-2 border-b gap-6 justify-around">
             {routes.map(r =>
             <Link className="hover:font-bold" key={r.index} href={r.path}>
@@ -44,17 +44,13 @@ export default function Navbar() {
                     <FcMenu className='cursor-pointer'/>
                 </div>
         </div>
-
-        <nav>
             <div className="flex p-2 border-b gap-6 justify-center">
                 {mapRoutes.map(r =>
                 <Link className="hover:font-bold" key={r.index} href={r.path}>
                 {r.name}
                 </Link>
                 )}            
-            </div>
-        </nav>
-        
+            </div>        
         <div className="flex p-2 border-b gap-6 justify-center">
             {mapRoutess.map(r =>
             <Link className="hover:font-bold" key={r.index} href={r.path}>
@@ -62,6 +58,7 @@ export default function Navbar() {
             </Link>
             )}            
         </div>
-    </header>        
+    </nav>
+    </>        
     )
 }
